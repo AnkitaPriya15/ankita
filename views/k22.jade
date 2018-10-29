@@ -1,0 +1,12 @@
+html
+   head
+      title Person1
+   body
+      if(type == "error")
+         h3(style = "color:red") #{message}
+      else
+         h3 New person1, 
+         name: #{JSON.stringify(person1.name)}, 
+         description: #{JSON.stringify(person1.description)} added!
+         br
+         a(href="http://localhost:8000/display") Display

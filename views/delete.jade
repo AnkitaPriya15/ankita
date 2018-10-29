@@ -1,0 +1,11 @@
+html
+    head
+        title name
+        script(type='text/javascript' src="https://code.jquery.com/jquery-3.3.1.min.js")
+        script(src="/javascripts/deleted.js")
+    body
+        form(action='/del' method="POST")
+          |id:
+          input(type="text" name="id" value=user.id)
+          
+          button(type='submit' ) Delete
